@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M'r R K (Riad)</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <style>
+        .about-bg {
+            background-color: #f3f4f6;
+        }
+        .hero-bg {
+            background-image: url('hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+        .portfolio-bg {
+            background-color: #f3f4f6;
+        }
+        .contact-bg {
+            background-color: #f3f4f6;
+        }
+        .footer-bg {
+            background-color: #333;
+            color: #fff;
+        }
+
+
+    </style>
+
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center text-white font-bold text-xl">
+                        <i class="fas fa-home text-lg mr-1"></i>
+                        M'r R K
+                    </a>
+                </div>
+                <!-- Menu button (hidden on larger screens) -->
+                <div class="block sm:hidden">
+                    <button id="menuButton" class="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- Links -->
+                <div class="hidden sm:block">
+                    <div class="flex space-x-4">
+                        <a href="#" class="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                            <i class="fas fa-home mr-1"></i>
+                            Home
+                        </a>
+                        <a href="#" class="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                            <i class="fas fa-user mr-1"></i>
+                            About
+                        </a>
+                        <a href="#" class="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                            <i class="fas fa-folder-open mr-1"></i>
+                            Portfolio
+                        </a>
+                        <a href="#Contact" class="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                            <i class="fas fa-envelope mr-1"></i>
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Responsive menu (hidden on smaller screens) -->
+        <div id="responsiveMenu" class="sm:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#Home" class="text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <i class="fas fa-home mr-2"></i>
+                    Home
+                </a>
+                <a href="#about" class="text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <i class="fas fa-user mr-2"></i>
+                    About
+                </a>
+                <a href="#Portfolio" class="text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <i class="fas fa-folder-open mr-2"></i>
+                    Portfolio
+                </a>
+                <a href="#contact" class="text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <i class="fas fa-envelope mr-2"></i>
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg flex items-center justify-center text-white">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl drop-shadow-2xl transprent sm:text-5xl font-bold mb-6">Welcome to M'r R K Riad's Website</h1>
+            <p class="text-lg drop-shadow-2xl sm:text-xl mb-8">
+                Welcome to my personal website! My name is Masrafi Rahman Riad, but you can call me Riad. I hail from Rajshahi, Tanor, Chawor, and am the proud founder of M'r R K.
+            </p>
+            <div class="flex drop-shadow-2xl items-center justify-center space-x-6">
+                <a href="#us" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Cannect Us</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 about-bg">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left">
+            <div class="md:w-1/2 px-4 mb-6 md:mb-0">
+                <img src="riad.jpg" alt="Portrait" class="w-40 h-40 object-cover rounded-full">
+            </div>
+            <div class="md:w-1/2 px-4">
+                <h2 class="text-3xl font-bold mb-4">About M'r R K Riad</h2>
+                <p class="text-lg mb-6">
+                    I embarked on my educational journey at Chawor Govt Primary School and continued my studies at Hatishail High School until class 8. I then completed my high school education at Tano Technical and Business Management College. From a young age, I have been fascinated by technology, particularly how mobile devices and laptops function.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section id="Portfolio" class="py-20 portfolio-bg">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-10 text-center">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out transform">
+                    <img src="contact.png" alt="Portfolio 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2">More About Myself</h3>
+                        <p class="text-gray-700">
+                            I began my educational journey at Chawor Govt Primary School before continuing to Hatishail High School. Pursuing my interest in technology, I enrolled at Tano Technical and Business Management College for my ninth and tenth grades. Since then, I've been deeply intrigued by electronics, particularly the inner workings of laptops and mobile devices. I've delved into various programming languages including Python, C, HTML, CSS, JavaScript, jQuery, Tailwind CSS, Next.js, Node.js, MongoDB, PostCSS.js, PHP, WordPress, SQL, and SQLite. Additionally, I'm expanding my skills in Java, Bash, R, Rust, and cybersecurity, including ethical hacking and tools like Kali Linux and ParrotOS. Constantly seeking knowledge, I explore third-party tools on GitHub and GitLab, as well as platforms like Vercel. Alongside my technical pursuits, I'm a proficient video and photo editor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-20 contact-bg">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left">
+            <div class="md:w-1/2 px-4">
+                <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+                <p class="text-lg mb-8">
+                    Beyond programming, I'm a proficient video and photo editor. You can find some of my creative endeavors on my YouTube channel, M'r R K (Riad). And the learning journey never stops—I'm constantly seeking new knowledge and skills to enhance my craft.
+                </p>
+                <!-- Contact Form -->
+                <form id="contact-form" class="text-left">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:border-blue-500" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:border-blue-500" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="wpnum" class="block text-gray-700 font-bold mb-2">What'sApp</label>
+                        <input type="number" id="wpnum" name="wpnum" class="border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:border-blue-500" placeholder="Your What'sApp Number">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:border-blue-500" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-600 transition duration-300 ease-in-out">Submit</button>
+                </form>
+            </div>
+            <div class="md:w-1/2 px-4 mb-6 md:mb-0">
+                <img src="contact.png" alt="Contact" class="w-full h-auto rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-20 footer-bg">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left">
+            <div class="md:w-1/2 px-4 mb-6 md:mb-0">
+                <a href="#">
+                    <img src="logo.png" alt="Logo" class="w-auto h-12 mb-4">
+                </a>
+                <p class="text-lg mb-6">
+                    
+                I've been deeply fascinated by electronics, especially laptops and mobile devices. This passion led me to explore the intricate workings of these devices and sparked my interest in programming. Today, I'm immersed in learning a broad range of programming languages and technologies
+                </p>
+                <div class="flex justify-center md:justify-start">
+                    <a href="https://www.facebook.com/mrrkriad?mibextid=ZbWKwL" class="text-blue-800 hover:text-blue-500 mx-4 bg-white rounded-full"><i class="fab fa-facebook-f text-2xl"></i></a>
+                    <a href="https://x.com/mrrkriad?t=bR2m_HGFm7k5535YxIBa1w&s=09" class="bg-white rounded-full text-blue-500 hover:text-blue-900 mx-4"><i class="fab fa-twitter text-2xl"></i></a>
+                    <a href="https://www.instagram.com/mdriadkhan77?igsh=d2czNHk4cnZzOXFz" class="bg-white rounded-full text-gray-400 hover:text-gray-200 mx-4"><i class="fab fa-instagram text-2xl"></i></a>
+             </div>
+            </div>
+            <div id="us" class="md:w-1/2 px-4">
+                <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+                <p class="text-gray-400 mb-2">
+                    <i class="fas fa-map-marker-alt"></i> Tanor, Rajshahi, Bangladeash
+                </p>
+                <p class="text-gray-400 mb-2">
+                    <i class="fas fa-envelope"></i> islamriad733@gmail.com
+                </p>
+                <p class="text-gray-100 mb-2">
+                    <i class="fas fa-phone-alt"></i> +8801311-775410
+
+                </p>
+
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p class="text-gray-400">
+                &copy; 2024 M'r R K Riad. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.getElementById('menuButton');
+            const responsiveMenu = document.getElementById('responsiveMenu');
+
+            menuButton.addEventListener('click', function () {
+                responsiveMenu.classList.toggle('hidden');
+            });
+        });
+        (function() {
+            emailjs.init("gRpTycnl-6L-wRnxU");
+        })();
+     </script>
+    <script type="text/javascript" src="tw.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
